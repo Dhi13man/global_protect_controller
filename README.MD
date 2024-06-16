@@ -6,26 +6,26 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/dhi13man/global_protect_controller?style=social)](https://github.com/Dhi13man/global_protect_controller/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/dhi13man/global_protect_controller)](https://github.com/Dhi13man/global_protect_controller/commits/main)
 
-[!["Buy Me A Coffee"](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20an%20Ego%20boost&emoji=%F0%9F%98%B3&slug=dhi13man&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00****)](https://www.buymeacoffee.com/dhi13man)
+[![Buy Me A Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20an%20Ego%20boost&emoji=%F0%9F%98%B3&slug=dhi13man&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00)](https://www.buymeacoffee.com/dhi13man)
 
-This shell script offers a swift and efficient method to manage the [Palo Alto Global Protect VPN/Network filter](https://docs.paloaltonetworks.com/globalprotect) directly from the command line. Designed for those who require a quick, one-command solution to automate the connection and disconnection process of the Global Protect VPN, this script stands out for its simplicity and effectiveness.
+Elevate your VPN management with the **Global Protect Controller** – a sleek, command-line shell script designed for effortless control of the [Palo Alto Global Protect VPN/Network filter](https://docs.paloaltonetworks.com/globalprotect). Perfect for users seeking a streamlined, single-command solution for Global Protect VPN connectivity, this lightweight script excels in simplicity and efficiency.
 
-Check out my [auto_vpn_connect](https://github.com/Dhi13man/auto_vpn_connect) project for a more advanced and feature-rich VPN automation solution.
+For a more advanced VPN automation experience, check out my [auto_vpn_connect](https://github.com/Dhi13man/auto_vpn_connect) project.
 
-## Features
+## ✨ Features
 
-- **One-Command Automation**: Connect or disconnect from the Global Protect VPN with a single command, streamlining your workflow.
-- **Policy Circumvention**: Provides a workaround for policies that mandate a constant VPN connection by allowing you to unload the Global Protect service and forcefully terminate it when not in use.
-- **Lightweight & Fast**: Being a shell script, it's incredibly lightweight and executes rapidly, ensuring minimal impact on system resources.
+- **One-Command Automation**: Seamlessly connect or disconnect from the Global Protect VPN with a single command, enhancing your workflow.
+- **Policy Circumvention**: Navigate around strict policies requiring constant VPN connection by unloading and forcefully terminating the Global Protect service when needed.
+- **Lightweight & Fast**: As a shell script, it runs with minimal resource usage, ensuring quick execution and low system impact.
 
-## Use Cases
+## 📚 Use Cases
 
-1. **Automated VPN Management**: Ideal for users who need to frequently connect to or disconnect from their VPN, this script automates the process, saving time and reducing manual effort.
-2. **Selective VPN Use**: For users who are subject to strict network policies requiring constant VPN use, this script offers a method to temporarily disable the VPN, granting more control over network connections.
+1. **Automated VPN Management**: Perfect for frequent VPN users, this script automates connection and disconnection, saving time and effort.
+2. **Selective VPN Use**: Ideal for users under stringent network policies, providing the flexibility to temporarily disable the VPN for greater control over network connections.
 
-## Getting Started
+## 🚀 Getting Started
 
-To use this script, simply clone the repository and grant execution permissions to the script file:
+Clone the repository and set up the script with the following commands:
 
 ```bash
 git clone https://github.com/dhi13man/global_protect_controller.git
@@ -33,12 +33,12 @@ cd global-protect-controller
 chmod +x global_protect_controller.sh
 ```
 
-## Usage
+## 🔧 Usage
 
-The script supports the following commands:
+Control the Global Protect VPN with these simple commands:
 
 - To start the Global Protect VPN:
-
+  
   ```bash
   ./global_protect_controller.sh --start
   # Or
@@ -57,10 +57,10 @@ The script supports the following commands:
   ./global_protect_controller.sh stop
   ```
 
-## Contributing
+## 🤝 Contributing
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Join the open-source community and make a difference! Contributions are **greatly appreciated** and help us all learn, inspire, and create together.
 
-## License
+## 📄 License
 
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
