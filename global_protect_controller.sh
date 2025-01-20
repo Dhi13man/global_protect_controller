@@ -1,5 +1,9 @@
 #!/bin/bash
 
+function is_global_protect_running {
+  launchctl list | grep -q com.paloaltonetworks.gp.pangpa
+}
+
 function start_global_protect {
   echo "Starting Global Protect"
 
@@ -24,17 +28,33 @@ function stop_global_protect {
   fi
 }
 
+function toggle_global_protect {
+  if is_global_protect_running; then
+    stop_global_protect
+  else
+    start_global_protect
+  fi
+}
+
+# Check if there are no arguments
+if [ $# -eq 0 ]; then
+  toggle_global_protect
+  exit 0
+fi
+
 # Take action based on the first parameter
-case $1 in 
-    --start|-s|start)
-        start_global_protect
-        ;;
-    --stop|-t|stop)
-        stop_global_protect
-        ;;
-    *)
-        echo "Usage: $0 {-s or --start|-t or --stop}"
-        exit 1
-        ;;
+case $1 in
+--start | -s | start)
+  start_global_protect
+  ;;
+--stop | -t | stop)
+  stop_global_protect
+  ;;
+--toggle | -g | toggle)
+  toggle_global_protect
+  ;;
+*)
+  echo "Usage: $0 {--start|-s|start|--stop|-t|stop|--toggle|-g|toggle}"
+  exit 1
+  ;;
 esac
-exit 0
