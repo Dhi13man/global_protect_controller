@@ -29,7 +29,7 @@ Clone the repository and set up the script with the following commands:
 
 ```bash
 git clone https://github.com/dhi13man/global_protect_controller.git
-cd global-protect-controller
+cd global_protect_controller
 chmod +x global_protect_controller.sh
 ```
 
